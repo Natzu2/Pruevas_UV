@@ -11,9 +11,8 @@ void loop() {
   float uv_index = uv.index(mV);
   Serial.println(uv_index); 
   float index(float read_mV);
-
+  
   int epa_uv_index = (int) uv.index(uv.read()) + 1;
   
-
   delay(6000);
 }
