@@ -19,15 +19,21 @@ uv_index = uv_mgr.uvindex_around_coords(27.967115, -110.918797)
 #       spamwriter.writerow([f'UV Index:{uv_index.value}', f'Exposure Risk: {uv_index.get_exposure_risk()}'])
 
 # file = open('prueba1.csv', 'a')
-medicion = 0
+
 # file.write('medicion,uv\n')
+medicion = 0
+
 
 while True:
  file = open('prueba1.csv', 'a')
  medicion += 1
- uv_index = uv_mgr.uvindex_around_coords(27.967115, -110.918797)
+
+ if medicion == 1:
+    print("Iteracion,UV")
+    file.write('Iteracion,UV\n')
+
  file.write(f'{medicion},{uv_index.value}\n')
  print(f'{medicion},{uv_index.value}\n')
- time.sleep(60)
+ time.sleep(6)
 
  file.close()
