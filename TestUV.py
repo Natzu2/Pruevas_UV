@@ -1,7 +1,6 @@
 from pyowm import OWM
 import sched, time
 import csv  
-import serial
 
 owm = OWM('25e4f8c6b58ce79d30fb2f9f51c1d1a6')
 uv_mgr = owm.uvindex_manager()

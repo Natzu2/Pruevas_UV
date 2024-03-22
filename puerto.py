@@ -2,7 +2,7 @@ import serial
 
 BAUDS = 9600
 
-puerto_serial = serial.Serial('COM4', BAUDS)
+puerto_serial = serial.Serial('COM3', BAUDS)
 
 while True:
     archivo = open('pruebaSerial1.csv', 'a')
